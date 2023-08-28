@@ -1,0 +1,15 @@
+export const names: string[] = [
+  "Bob",
+  "Sam",
+  "Elsa",
+  "Phoebe",
+  "Sarah",
+  "Harold",
+  "William",
+  "John",
+  "James",
+  "Robert",
+  "Michael",
+  "Mary",
+  "Patricia",
+];
