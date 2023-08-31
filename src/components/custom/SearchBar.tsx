@@ -1,4 +1,4 @@
-import BaseInput from "../base/BaseInput";
+import BaseInput from "@/components/base/BaseInput";
 
 type Props = {
   searchTerm: string;
@@ -7,7 +7,12 @@ type Props = {
 
 const SearchBar = ({ searchTerm, setSearchTerm }: Props) => {
   return (
-    <BaseInput icon="search" value={searchTerm} setValue={setSearchTerm} />
+    <BaseInput
+      icon="search"
+      value={searchTerm}
+      setValue={setSearchTerm}
+      valueType="text"
+    />
   );
 };
 

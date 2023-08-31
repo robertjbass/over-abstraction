@@ -1,6 +1,11 @@
-import { BeakerIcon, MagnifyingGlassIcon } from "@heroicons/react/24/solid";
+import {
+  BeakerIcon,
+  LockClosedIcon,
+  MagnifyingGlassIcon,
+  UserIcon,
+} from "@heroicons/react/24/solid";
 
-export type IconType = "search" | "beaker";
+export type IconType = "search" | "beaker" | "user" | "key";
 
 type Props = {
   type: IconType;
@@ -11,6 +16,8 @@ const BaseIcon = ({ type }: Props) => {
   const icons = {
     search: <MagnifyingGlassIcon className={classValue} />,
     beaker: <BeakerIcon className={classValue} />,
+    user: <UserIcon className={classValue} />,
+    key: <LockClosedIcon className={classValue} />,
   };
 
   return icons[type];
